@@ -1,0 +1,30 @@
+<div class="login">
+
+  <div class="form_container">
+
+      <h1 class="title">My account</h1>
+
+      <form action="/" class="form">
+
+          <div>
+              <label for="name" class="label">Name</label>
+              <input type="text" required id="name" placeholder="Geordie" class="input input_name" #inputName="ngModel" [(ngModel)]="person.name" [value]="person.name">
+
+              <label for="email" class="label">Email address</label>
+              <input type="mail" id="email" placeholder="Geordie@gmail.com" class="input input_email" #inputEmail="ngModel" [(ngModel)]="person.email" [value]="person.email">
+
+              <label for="password" class="label">Password</label>
+              <input type="password" id="password" placeholder="*********" class="input input-password" #inputPassword="ngModel" [(ngModel)]="person.password" [value]="person.password">
+
+              <label for="password_confirmation" class="label">Password confirmation</label>
+              <input type="password" id="password_confirmation" placeholder="*********" class="input input-password" #inputPasswordConfirmation="ngModel" [(ngModel)]="person.password_confirmation" [value]="person.password_confirmation">
+          </div>
+          <button class="primary_button signup_button" ><a routerLink="/login">Create</a></button>
+          <!-- <input type="submit" value="Create" class="primary_button login_button"> -->
+      </form>
+
+
+  </div>
+
+</div>
+<router-outlet> </router-outlet>
